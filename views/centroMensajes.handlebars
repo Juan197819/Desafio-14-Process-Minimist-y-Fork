@@ -1,0 +1,49 @@
+        <div class="usuario flexRow bienvenido" >
+                <div>
+                        <h2 class="estiloMensaje"><span id="saludo">Bienvenido/a </span>{{nombre}}</h2>
+                        <h3 id="borrarElemento1" class="estiloMensaje"><span>MAIL: {{{email}}}</span></h3>
+                </div>
+                <a href="logout" id="boton" onclick="mostrarSaludo()">Desloguearse</a>
+        </div>
+        <div id="centroMensajes" class="usuario mensajes">
+                <h2>Centro de Mensajes</h2>
+                <h2 id="compresion"></h2>
+
+                <form class="flexCol form" onSubmit='return agregarMensaje(this)'>
+                        <label for="email">Email</label>
+                        <input id='email' type="email" required name="email" placeholder="abcd@gmail.com">
+
+                        <label for="nombre">Nombre</label>
+                        <input id='nombre' type="text" required name="nombre" placeholder="Juan">
+
+                        <label for="apellido">Apellido</label>
+                        <input id='apellido' type="text" required name="apellido" placeholder="Perez">
+
+                        <label for="edad">Edad</label>
+                        <input id='edad' type="number" required name="edad" placeholder="34">
+
+                        <label for="alias">Alias</label>
+                        <input id='alias' type="text" required name="alias" placeholder="Juanito">
+
+                        <label for="avatar">Avatar</label>
+                        <input id='avatar' type="text" required name="avatar" placeholder="Perez">
+
+                        <div id='conversacion'></div>
+                        <label for="mensaje">Mensaje</label>
+
+                        <div class="flexRow">
+                                <input id='mensaje' type="text" placeholder="Escriba aquí su mensaje" name="mensaje">        
+                                <button>Enviar</button>
+                        </div>
+                </form>
+        </div>
+        <div>
+                <a id="borrarElemento2" href="/api/productos-test">Ir a Tabla de productos aleatoria</a>
+        </div>
+        <div>
+                <a id="borrarElemento3" href="/info">Informacion del Programa</a>
+        </div>
+        <div>
+                <a id="borrarElemento4" target="_blank" href="/api/randoms">Numeros Aleatorios</a>
+        </div>
+

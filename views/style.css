@@ -1,0 +1,140 @@
+*{
+    box-sizing: content-box;
+    margin:0;
+    padding: 0;
+    text-decoration: none;
+    color: black
+}
+
+body{
+    background-color: whitesmoke;
+
+}
+h1{
+    text-align: center;
+    color: rgb(42, 42, 164); 
+    text-decoration: underline;
+}
+h2, h3{
+    color:rgb(4, 4, 165);
+    font-size: 30px;
+    margin: 10px;
+    margin-left: 20px;
+    text-decoration: underline;
+}
+h3{
+    font-size: 20px;
+}
+table,th,td{
+    border: 2px solid black;
+    background-color: rgba(25, 0, 255, 0.661);
+    font-size: 1.25rem;
+}
+
+#lista{
+    width: 100vw;
+    text-align: center;
+}
+
+table{
+    border-collapse:collapse;
+    border: 2px solid black;
+    margin: 30px auto;
+    width: 80%;
+    max-width:600px;
+    background-color: whitesmoke;
+}
+.flexCol{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+.flexRow{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items:baseline;
+}
+.textoCentrado{
+    text-align: center;
+}
+
+.form{
+    align-items:flex-start;
+    justify-content: space-between;
+
+}
+button, input, label,p{
+    margin:5px;
+    margin-left: 30px;
+    height: 20px;
+}
+
+button{
+    display: block;
+    padding: 3px 5px;
+    background-color: rgba(39, 94, 183, 0.586);
+    font-weight: bold;
+}
+
+p{
+    margin-top: 10px;
+}
+
+button:hover, a:hover{
+    background-color:grey;
+    cursor: pointer
+}
+
+.estiloMail{
+    color:blue;
+    font-weight:bold;
+}
+
+.estiloFecha{
+    color:brown;
+}
+
+.estiloMensaje{
+    color:green;
+    font-style: italic;
+}
+
+.estiloMensaje span{
+    color:green;
+    font-style: italic;
+}
+
+.avatar{
+    max-height: 30px;
+    vertical-align:middle;
+    margin-left: 20px;
+}
+.usuario{
+    width: 50%;
+    margin: 30px;
+    border-radius: 10px;
+    background-color: rgba(127, 255, 212, 0.315);
+    color:green;
+}
+
+a{
+    padding: 5px;
+    display: inline-block;
+    border: solid 1px black;
+    border-radius: 10%;
+    background-color: rgba(255, 157, 0, 0.978);
+    color:rgb(4, 4, 165);
+    margin: 20px;
+    font-weight: bold;
+}
+
+input{
+    width: 70%;
+}
+
+
+.bienvenido{
+    padding: 20px;
+}
